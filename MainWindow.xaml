@@ -1,0 +1,17 @@
+﻿<Window x:Class="JsonPrettyOffline.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="JsonPrettyOffline" Height="500" Width="873.484">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="450" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"
+                 x:Name="txtOriginal" ScrollViewer.VerticalScrollBarVisibility="Visible" MaxLines="10000"/>
+        <TextBox HorizontalAlignment="Left" Height="450" Margin="457,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"
+                 x:Name="txtPretty" ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="16"/>
+        <Button Content=">" HorizontalAlignment="Left" Margin="415,140,0,0" VerticalAlignment="Top" Width="37"
+                x:Name="btnPretty" Click="btnPretty_Click"/>
+        <Button Content="File" HorizontalAlignment="Left" Margin="415,77,0,0" VerticalAlignment="Top" Width="37"
+                x:Name="btnOpenFile" Click="btnOpenFile_Click"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="415,206,0,0" VerticalAlignment="Top" Width="37"
+                x:Name="btnSaveResult" Click="btnSaveResult_Click" />
+    </Grid>
+</Window>
